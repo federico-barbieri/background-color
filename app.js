@@ -14,7 +14,12 @@ function randomColor(){
 // RGB to CSS
 
 function rgbToCss(rgb){
-    return `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
+    let hex1 = rgb.r.toString(16);
+    let hex2 = rgb.g.toString(16);
+    let hex3 = rgb.b.toString(16);
+
+    let finalHex = `#${hex1}${hex2}${hex3}`;
+    return finalHex;
 }
 
 // random background 
